@@ -1,9 +1,84 @@
 .aboutMeContainer {
   height: 100vh;
+  overflow-x: hidden;
 }
 
-.aboutMeTitle {
-  text-align: center;
-  font-size: 300%;
-  margin-top: 2%;
+.scrollingDivContainer {
+  display: flex;
+  width: 100%;
+  background: red;
+}
+
+.scrollingDiv {
+  display: flex;
+  gap: 2%;
+  white-space: nowrap;
+}
+
+.scrollingTitle {
+  font-size: 500%;
+  color: white;
+  -webkit-text-stroke: 3px black;
+  text-shadow: 10px 10px black;
+  letter-spacing: 3px;
+  -webkit-animation: scrolling 20s linear infinite;
+          animation: scrolling 20s linear infinite;
+  cursor: default;
+}
+
+.aboutMeCardTitle {
+  font-size: 500%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 3% auto;
+  cursor: default;
+}
+
+.aboutMeCardTitle:after {
+  display: block;
+  content: "";
+  border-bottom: 10px solid red;
+  border-radius: 20px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.aboutMeCardTitle:hover:after {
+  transform: scaleX(1);
+}
+
+.profileContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.journeyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40%;
+}
+
+@-webkit-keyframes scrolling {
+  to {
+    transform: translateX(-1000%);
+  }
+}
+
+@keyframes scrolling {
+  to {
+    transform: translateX(-1000%);
+  }
+}
+@-webkit-keyframes barrelRoll {
+  to {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes barrelRoll {
+  to {
+    transform: rotateX(360deg);
+  }
 }/*# sourceMappingURL=AboutMe.css.map */

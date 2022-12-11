@@ -17,10 +17,10 @@ function SocialMedia() {
           <FaGithubSquare size={70} />
         </a>
 
-        <a className="socialMediaIcon" href="">
+        <a className="socialMediaIcon" href="/">
           <FaEnvelope size={70} />
         </a>
-        <a href="">
+        <a href="/">
           <h1 className="cv">CV</h1>
         </a>
       </div>
