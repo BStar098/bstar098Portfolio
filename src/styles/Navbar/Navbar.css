@@ -148,6 +148,7 @@ nav > a:hover {
     margin-top: 3%;
     border-left: 15px solid black;
     border-right: 15px solid black;
+    z-index: 5;
   }
   .openNavbar > a {
     font-size: 500%;
