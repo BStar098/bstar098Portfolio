@@ -1,0 +1,71 @@
+.landingContainer
+    height: 85%
+    display: flex
+    align-items: center
+    justify-content: center
+    background: rgb(251, 251, 165)
+    gap: 100px
+    .hidden
+        visibility: hidden
+        height: 0px
+        width: 0px
+    h1
+        font-size: 700%
+        color: #030303
+        text-shadow: 7px 7px #ff0000
+        text-align: center
+        cursor: default
+        transition: 0.5s ease
+              
+    h2 
+        color: #000000
+        font-size: 600%
+        text-shadow: 7px 7px #AA96DA
+        text-align: center
+        cursor: default
+        transition: 0.5s ease
+        
+    .nameContainer:hover h1
+        letter-spacing: 20px
+        text-shadow: 100px 100px #ff0000
+        margin: 7% 0% 7% 0%
+        transition: 0.5s ease
+    .nameContainer:hover h2
+        letter-spacing: 200px
+        transition: 0.5s ease-out
+        text-shadow: -100px 100px #AA96DA
+        font-size: 200%
+    img 
+        max-height: 366px
+        max-width: 400px
+        transform: translate(0vh, 0vh)
+        transition: 1s
+    .nameContainer
+        display: flex
+        flex-direction: column
+*::selection
+    background: #aa96daa5
+    border-radius: 30%
+            
+@media (max-width:1200px)
+  .landingContainer
+    h1
+        font-size: 500%
+    h2
+        font-size: 300%
+    .nameContainer:hover h1
+        letter-spacing: 5px
+        text-shadow: 30px 30px #ff0000
+        margin: 7% 0% 7% 0%
+        transition: 0.5s ease
+    .nameContainer:hover h2
+        letter-spacing: 50px
+        transition: 0.5s ease
+        text-shadow: -30px 30px #AA96DA
+        font-size: 200%
+    
+
+
+    
+    
+       

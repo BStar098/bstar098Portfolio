@@ -1,0 +1,33 @@
+@font-face {
+  font-family: MangoGrotesque;
+  src: url(MangoGrotesque-SemiBold.ttf);
+}
+@font-face {
+  font-family: Hitchcut;
+  src: url(Hitchcut-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Hitchcut;
+}
+
+#root {
+  border: 15px solid black;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.landingPageContainer {
+  height: 97vh;
+}
+
+.hideOverflowY {
+  overflow-y: hidden;
+}
+
+.hideOverflowX {
+  overflow-x: hidden;
+}/*# sourceMappingURL=main.css.map */
