@@ -46,13 +46,7 @@ function AboutMe() {
               what I like doing!
             </p>
           </div>
-          <img
-            className="profilePicture"
-            alt="myPicture"
-            src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/WHBRWU6WHJEA5K6CLGVOC64VRU.jpg"
-            height="300px"
-            width="300px"
-          ></img>
+         
         </div>
       </div>
     </div>
