@@ -46,7 +46,6 @@ function AboutMe() {
               what I like doing!
             </p>
           </div>
-         
         </div>
       </div>
     </div>
