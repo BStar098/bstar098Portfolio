@@ -12,18 +12,26 @@ function Navbar() {
 
   return (
     <header>
-      <a href="/home" className="homeContainer">
+      <a href="/#home" className="homeContainer">
         <p className="home">Home</p>
       </a>
       <nav className={`NavbarDesktop`}>
-        <a href="/me">About me</a>
-        <a href="/projects">My work</a>
-        <a href="/contact">Contact me</a>
+        <a href="/#me">About me</a>
+        <a href="/#projects">My work</a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&source=mailto&to=santinahuel098@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Contact me
+        </a>
       </nav>
       <nav className={`Navbar${className}`}>
-        <a href="/me">About me</a>
-        <a href="/projects">My work</a>
-        <a href="/contact">Contact me</a>
+        <a href="/#me">About me</a>
+        <a href="/#projects">My work</a>
+        <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=santinahuel098@gmail.com">
+          Contact me
+        </a>
       </nav>
       <div className={`burguer`} onClick={classHandler}>
         <span className="bar"></span>
