@@ -16,9 +16,9 @@ function Landing() {
         transition={{ type: "tween", duration: 3 }}
         className="nameContainer"
         onHoverStart={() => {
-        document
+          document
             .getElementsByTagName("body")[0]
-            .classList.add("hideOverflowX"); 
+            .classList.add("hideOverflowX");
           setDeveloper("I create things");
         }}
         onHoverEnd={() => {
@@ -32,6 +32,7 @@ function Landing() {
         <h1>{developer}</h1>
         <h2 className="webDeveloper">Web Developer</h2>
       </motion.div>
+
     </div>
   );
 }
