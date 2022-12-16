@@ -1,9 +1,9 @@
 .aboutMeContainer {
-  overflow-x: hidden;
-  background: #fbfba5;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  background: #fbfba5;
+  overflow: hidden;
 }
 
 .scrollingDivContainer {
@@ -64,7 +64,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 40%;
+  width: 60%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -92,7 +92,7 @@
 }
 
 .journeyTitle {
-  font-size: 2.5vw;
+  font-size: 200%;
   text-shadow: 5px 5px rgba(0, 0, 0, 0.3333333333);
   width: 100%;
   text-align: center;
@@ -104,10 +104,10 @@
 }
 
 .journeyBody {
-  font-size: 2vw;
+  font-size: 250%;
   word-spacing: 5px;
   font-family: MangoGrotesque;
-  text-shadow: 2px 2px rgba(1, 0, 0, 0.2588235294);
+  text-shadow: 1px 1px rgba(1, 0, 0, 0.2588235294);
   margin: 0% 3% 0% 10%;
   padding: 4% 2% 4% 2%;
   border-left: 5px double black;
@@ -136,5 +136,19 @@
 @keyframes barrelRoll {
   to {
     transform: rotateX(360deg);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .aboutMeCardTitle {
+    display: none;
+  }
+  .journeyContainer {
+    width: 100%;
+    box-shadow: none;
+    height: 100%;
+  }
+  .journeyBody {
+    font-size: 200%;
+    height: 100%;
   }
 }/*# sourceMappingURL=AboutMe.css.map */
