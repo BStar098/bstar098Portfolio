@@ -1,13 +1,12 @@
 import React from "react";
 import "../styles/AboutMe/AboutMe.css";
 import { FaCircle } from "react-icons/fa";
-import ScrollingSeparator from "./ScrollingSeparator";
+
 
 function AboutMe() {
   return (
     <>
       <div id='me' className="aboutMeContainer">
-        <ScrollingSeparator backgroundColor='red' title='ABOUT ME'/>
         <div className="aboutMeCardContainer">
           <h1 className="aboutMeCardTitle">A bit of me</h1>
           <div className="profileContainer">
