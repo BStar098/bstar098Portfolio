@@ -1,5 +1,5 @@
 .myProjectsContainer
-    height: 100vh
+    height: fit-content
     display: flex
     flex-direction: column
     justify-content: center
@@ -7,9 +7,9 @@
     background: #fbfba5
 
 .myProjectsTitle
-    font-size: 4vw
+    font-size: 6vh
     width: fit-content
-    margin: 3% auto 3% auto
+    margin: 2% auto 1% auto
     padding: 0.2% 1% 0.2% 1%
     cursor: default
     border: 7px solid black
@@ -22,13 +22,15 @@
 
 
 .swiperContainer
-    height: 70%
-    width: 70%
+    height: 80%
+    width: 80%
+    margin-bottom: 2%
 
 .swiperPicture
     display: flex
     align-items: center
     justify-content: center
+   
     >a
         >img 
             border: 15px solid black
@@ -37,13 +39,27 @@
             height: 100%
             width: 100%
             user-select: none
+            
     >iframe
         border: 15px solid black
         border-radius: 5px
         box-shadow: 10px 10px black
-        user-select: none 
+        user-select: none
        
-        
-
-
+@media screen and ( max-width: 900px )
+    .myProjectsTitle
+        text-shadow: 3px 3px black
+        box-shadow: 5px 5px black
+    .swiperContainer
+        height: 90%
+        width: 100%
+        margin: 3%
+    .swiperPicture
+        >a
+            >img
+                border: 5px solid black
+                box-shadow: 0px 0px
+        >iframe
+            box-shadow: 0px 0px
+            border: 5px solid black
     
