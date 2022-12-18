@@ -10,39 +10,34 @@
         height: 0px
         width: 0px
     h1
-        font-size: 700%
+        font-size: 15vh
         color: #030303
         text-shadow: 7px 7px #ff0000
         text-align: center
         cursor: default
         transition: 0.5s ease
+        white-space: nowrap
               
     h2 
         color: #000000
-        font-size: 600%
+        font-size: 8vh
         text-shadow: 7px 7px #AA96DA
         text-align: center
         cursor: default
         transition: 0.5s ease
+        white-space: nowrap
         
     .nameContainer:hover h1
         letter-spacing: 20px
         text-shadow: 100px 100px #ff0000
-        margin: 7% 0% 7% 0%
+        margin: 5% 0% 5% 0%
         transition: 0.5s ease
     .nameContainer:hover h2
-        letter-spacing: 200px
+        letter-spacing: 100px
         transition: 0.5s ease-out
         text-shadow: -100px 100px #AA96DA
-        font-size: 200%
-    img 
-        max-height: 366px
-        max-width: 400px
-        transform: translate(0vh, 0vh)
-        transition: 1s
-    .nameContainer
-        display: flex
-        flex-direction: column
+        font-size: 3vh
+
 *::selection
     background: #aa96daa5
     border-radius: 30%
@@ -50,19 +45,20 @@
 @media (max-width:1200px)
   .landingContainer
     h1
-        font-size: 500%
+        font-size: 9vw
+        white-space: nowrap
     h2
-        font-size: 300%
+        font-size: 8vw
     .nameContainer:hover h1
         letter-spacing: 5px
-        text-shadow: 30px 30px #ff0000
+        text-shadow: 5px 5px #ff0000
         margin: 7% 0% 7% 0%
         transition: 0.5s ease
     .nameContainer:hover h2
-        letter-spacing: 50px
+        letter-spacing: 20px
         transition: 0.5s ease
-        text-shadow: -30px 30px #AA96DA
-        font-size: 200%
+        text-shadow: -15px 15px #AA96DA
+        font-size: 2vh
     
 
 
