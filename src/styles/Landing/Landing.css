@@ -12,42 +12,34 @@
   width: 0px;
 }
 .landingContainer h1 {
-  font-size: 700%;
+  font-size: 15vh;
   color: #030303;
   text-shadow: 7px 7px #ff0000;
   text-align: center;
   cursor: default;
   transition: 0.5s ease;
+  white-space: nowrap;
 }
 .landingContainer h2 {
   color: #000000;
-  font-size: 600%;
+  font-size: 8vh;
   text-shadow: 7px 7px #AA96DA;
   text-align: center;
   cursor: default;
   transition: 0.5s ease;
+  white-space: nowrap;
 }
 .landingContainer .nameContainer:hover h1 {
   letter-spacing: 20px;
   text-shadow: 100px 100px #ff0000;
-  margin: 7% 0% 7% 0%;
+  margin: 5% 0% 5% 0%;
   transition: 0.5s ease;
 }
 .landingContainer .nameContainer:hover h2 {
-  letter-spacing: 200px;
+  letter-spacing: 100px;
   transition: 0.5s ease-out;
   text-shadow: -100px 100px #AA96DA;
-  font-size: 200%;
-}
-.landingContainer img {
-  max-height: 366px;
-  max-width: 400px;
-  transform: translate(0vh, 0vh);
-  transition: 1s;
-}
-.landingContainer .nameContainer {
-  display: flex;
-  flex-direction: column;
+  font-size: 3vh;
 }
 
 *::-moz-selection {
@@ -62,21 +54,22 @@
 
 @media (max-width: 1200px) {
   .landingContainer h1 {
-    font-size: 500%;
+    font-size: 9vw;
+    white-space: nowrap;
   }
   .landingContainer h2 {
-    font-size: 300%;
+    font-size: 8vw;
   }
   .landingContainer .nameContainer:hover h1 {
     letter-spacing: 5px;
-    text-shadow: 30px 30px #ff0000;
+    text-shadow: 5px 5px #ff0000;
     margin: 7% 0% 7% 0%;
     transition: 0.5s ease;
   }
   .landingContainer .nameContainer:hover h2 {
-    letter-spacing: 50px;
+    letter-spacing: 20px;
     transition: 0.5s ease;
-    text-shadow: -30px 30px #AA96DA;
-    font-size: 200%;
+    text-shadow: -15px 15px #AA96DA;
+    font-size: 2vh;
   }
 }/*# sourceMappingURL=Landing.css.map */

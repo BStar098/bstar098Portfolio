@@ -23,3 +23,27 @@
     overflow-y: hidden
 .hideOverflowX
     overflow-x: hidden
+.scrollingDivContainer
+    display: flex
+    width: 100%
+    background: red
+
+.scrollingDiv
+    display: flex
+    gap: 2%
+    white-space: nowrap
+    border-bottom: 10px solid black
+    border-top: 10px solid black
+
+.scrollingTitle
+    font-size: 8vh
+    color: white
+    -webkit-text-stroke: 3px black
+    text-shadow: 10px 10px black
+    letter-spacing: 3px
+    animation: scrolling 20s linear infinite
+    cursor: default
+@media screen and ( max-width: 800px )
+    .scrollingTitle
+        text-shadow: 7px 7px black
+    
