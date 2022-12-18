@@ -10,7 +10,7 @@
 }
 
 .myProjectsTitle {
-  font-size: 6vh;
+  font-size: 5vh;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -59,8 +59,10 @@
 
 @media screen and (max-width: 900px) {
   .myProjectsTitle {
+    -webkit-text-stroke: 2px black;
+    border: 3px solid black;
     text-shadow: 3px 3px black;
-    box-shadow: 5px 5px black;
+    box-shadow: 4px 4px black;
   }
   .swiperContainer {
     height: 90%;
