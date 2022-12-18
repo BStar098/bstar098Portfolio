@@ -2,28 +2,6 @@
     height: fit-content
     background: #fbfba5
     overflow: hidden
-    
-.scrollingDivContainer
-    display: flex
-    width: 100%
-    background: red
-
-.scrollingDiv
-    display: flex
-    gap: 2%
-    white-space: nowrap
-    border-bottom: 10px solid black
-    border-top: 10px solid black
-
-.scrollingTitle
-    font-size: 500%
-    color: white
-    -webkit-text-stroke: 3px black
-    text-shadow: 10px 10px black
-    letter-spacing: 3px
-    animation: scrolling 20s linear infinite
-    cursor: default
-
 
 .aboutMeCardContainer
     height: fit-content
@@ -31,13 +9,13 @@
 .aboutMeCardTitle
     font-size: 4vw
     width: fit-content
-    margin: 3% auto 3% auto
+    margin: 3% auto 0% auto
     padding: 0.2% 1% 0.2% 1%
     cursor: default
     border: 7px solid black
     box-shadow: 10px 10px black
     color: #ffffff
-    background: #fd4646
+    background: red
     -webkit-text-stroke: 3.5px black
     text-shadow: 7px 7px black
 
@@ -46,7 +24,8 @@
     display: flex
     justify-content: center
     gap: 10%
-    height: 100vh
+    height: fit-content
+    margin: 2% 0% 3% 0%
     
     
 .journeyContainer
@@ -76,7 +55,7 @@
     box-shadow: inset 0 0 10px #01000084
     
 .journeyTitle
-    font-size: 200%
+    font-size: 6vh
     text-shadow: 5px 5px #00000055
     width: 100%
     text-align: center
@@ -107,13 +86,16 @@
 
 
 @media screen and ( max-width: 1200px)
+    .profileContainer
+        margin: 1%
     .aboutMeCardTitle
         display: none
-
     .journeyContainer
-        width: 100%
+        width: fit-content 
         box-shadow: none
-        height: 100%
+        height: fit-content
+        border: 5px solid black
     .journeyBody
-        font-size: 200%
-        height: 100%
+        font-size: 5vh
+        height: fit-content
+        
