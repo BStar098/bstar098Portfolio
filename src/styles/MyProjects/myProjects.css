@@ -93,6 +93,7 @@
   font-size: 5vw;
   box-shadow: 7px 5px black;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .carouselNavigationIcon:hover {
