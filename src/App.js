@@ -4,6 +4,7 @@ import AboutMe from "./components/AboutMe";
 import SocialMedia from "./components/SocialMedia";
 import MyProjects from "./components/MyProjects";
 import ScrollingSeparator from "./components/ScrollingSeparator";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,11 +13,21 @@ function App() {
         <Navbar />
         <Landing />
       </div>
-      <ScrollingSeparator backgroundColor="red" title="ABOUT ME" />
+      <ScrollingSeparator
+        fontSize="8vh"
+        backgroundColor="red"
+        title="ABOUT ME"
+      />
       <AboutMe />
       <SocialMedia />
-      <ScrollingSeparator backgroundColor="lime" title="MY PROJECTS" />
+      <ScrollingSeparator
+        fontSize="8vh"
+        backgroundColor="lime"
+        title="MY PROJECTS"
+      />
       <MyProjects />
+
+      <Footer />
     </>
   );
 }
