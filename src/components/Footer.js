@@ -9,9 +9,17 @@ function Footer() {
       <ScrollingSeparator
         className="footerScrollingSeparator"
         backgroundColor="#AA96DA"
-        title="Thanks for watching!"
+        title="Click below to share me!"
       />
-      <div className="footerContainer">
+      <div
+        onClick={() => {
+          navigator.clipboard.writeText(
+            "https://bstar098-portfolio.vercel.app/"
+          );
+          alert("Portfolio url copied to clipboard!");
+        }}
+        className="footerContainer"
+      >
         <Button
           size={"2vw"}
           background={"#AA96DA"}
