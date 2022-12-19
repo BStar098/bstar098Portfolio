@@ -8,16 +8,28 @@ import eCommerce from "../assets/myProjectsPictures/E-commerce.png";
 import TMDB from "../assets/myProjectsPictures/Movie_Database.png";
 import portfolio from "../assets/myProjectsPictures/Portfolio.png";
 
+import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+
 function MyProjects() {
   return (
     <div id="projects" className="myProjectsContainer">
       <h1 className="myProjectsTitle">Click the pictures ;)</h1>
+
       <div className="swiperContainer">
+        <div className="button-prev-slide">
+          <GoArrowLeft className="carouselNavigationIcon" />
+        </div>
+        <div className="button-next-slide">
+          <GoArrowRight className="carouselNavigationIcon" />
+        </div>
         <div className="swiper-wrapper">
           <Swiper
             loop={true}
             slidesPerView={1}
-            navigation={true}
+            navigation={{
+              nextEl: ".button-next-slide",
+              prevEl: ".button-prev-slide",
+            }}
             modules={[Navigation]}
           >
             <SwiperSlide className="swiperPicture">

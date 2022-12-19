@@ -26,9 +26,11 @@
 }
 
 .swiperContainer {
+  display: flex;
   height: 80%;
   width: 80%;
   margin-bottom: 7%;
+  position: relative;
 }
 
 .swiperPicture {
@@ -57,9 +59,42 @@
           user-select: none;
 }
 
+.button-prev-slide {
+  position: absolute;
+  z-index: 99;
+  align-self: center;
+  left: -7%;
+}
+
+.button-next-slide {
+  position: absolute;
+  align-self: center;
+  z-index: 99;
+  right: -7%;
+}
+
+.carouselNavigationIcon {
+  color: black;
+  background: lime;
+  border: 3px solid black;
+  border-radius: 8px;
+  font-size: 5vw;
+  box-shadow: 7px 5px black;
+  transition: 0.2s;
+}
+
+.carouselNavigationIcon:hover {
+  background: #5efd60;
+  font-size: 5.2vw;
+}
+
+.carouselNavigationIcon:active {
+  font-size: 4.5vw;
+}
+
 @media screen and (max-width: 800px) {
   .myProjectsTitle {
-    font-size: 6vh;
+    font-size: 6vw;
     -webkit-text-stroke: 2px black;
     border: 3px solid black;
     text-shadow: 3px 3px black;
@@ -77,5 +112,19 @@
   .swiperPicture > iframe {
     box-shadow: 0px 0px;
     border: 5px solid black;
+  }
+  .button-prev-slide {
+    left: 0%;
+  }
+  .button-next-slide {
+    right: 0%;
+  }
+  .carouselNavigationIcon {
+    box-shadow: 3px 3px black;
+    border: 2px solid black;
+    opacity: 0.3;
+  }
+  .carouselNavigationIcon:hover {
+    opacity: 1;
   }
 }/*# sourceMappingURL=myProjects.css.map */
