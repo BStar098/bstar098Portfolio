@@ -4,7 +4,7 @@
   left: 50%;
   transform: translateX(-50%);
   position: fixed;
-  bottom: 5%;
+  bottom: 2%;
   z-index: 4;
   width: 25%;
   min-width: 400px;
