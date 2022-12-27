@@ -2,6 +2,7 @@ header
     position: relative
     background: #AA96DA
     height: 15%
+    min-height: fit-content
     display: flex
     justify-content: space-between
     align-items: center
@@ -9,9 +10,19 @@ header
     >a
         z-index: 200
         color: #fbfba5
-        padding-left: 30px
         text-decoration: none
-        
+
+.youtubeIcon
+    color: #fbfba5
+    filter: drop-shadow(8px 5px #ff0000)
+    transition: 0.7s ease
+    align-self: center
+    transform: scale(1.2)
+.home:hover .youtubeIcon
+    color: #ff0000
+    filter: drop-shadow(-8px -5px #fbfba5)
+    transform: scale(1.4)
+      
 nav>a
     text-decoration: none
     font-size: 300%
@@ -20,6 +31,8 @@ nav>a
     color: #fbfba5
     transition: 0.7s ease
     -webkit-text-stroke: 2px black
+    cursor: pointer
+    
     
 nav>a:hover
     color: #ff0000
@@ -29,8 +42,12 @@ nav>a:hover
 
 .homeContainer
     display: flex
+    flex-direction: "row"
     width: fit-content
-
+    gap: 5%
+    white-space: "nowrap"
+    align-items: center
+    justify-content: center
 .home
     text-shadow: 8px 5px #ff0000
     font-size: 300%
@@ -39,13 +56,14 @@ nav>a:hover
     -webkit-text-stroke: 2px black
     border: 5px solid black
     box-shadow: 5px 5px black
-    padding: 0% 10% 0% 10%
+    padding: 0% 1% 0% 1%
+    margin-left: 1%
 
 .home:hover
-    text-shadow: 8px 5px #fbfba5
+    text-shadow: -8px -5px #fbfba5
     color: #ff0000
     letter-spacing: 7px
-    font-size: 400%
+    font-size: 350%
     transition: 0.7s ease
     
 
@@ -67,13 +85,9 @@ nav>a:hover
     display: none
 
 @media (max-width:1300px) and (min-width: 1100px)
-    .home
-        font-size: 300%
-    .home:hover
-        font-size: 400%
     .NavbarDesktop
         display: none
-    
+   
     .burguer
         z-index: 200
         display: flex
@@ -139,14 +153,18 @@ nav>a:hover
         >a:hover
             font-size: 600%
             letter-spacing: 50px
-@media (max-width:1100px)
-    .home
-        font-size: 300%
-    .home:hover
-        font-size: 400%
+@media (max-width:1500px)
     .NavbarDesktop
         display: none
-    
+    .youtubeIcon
+        transform: scale(1)
+    .home:hover .youtubeIcon
+        transform: scale(1.2)
+    .home
+        font-size: 250%
+        padding: 0% 2% 0% 2%
+    .home:hover
+        font-size: 280%
     .burguer
         z-index: 200
         display: flex

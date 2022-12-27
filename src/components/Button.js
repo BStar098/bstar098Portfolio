@@ -16,13 +16,13 @@ function Button({ size, background, color, text, className, href }) {
           whiteSpace: "nowrap",
           padding: "0.2% 1% 0.2% 1%",
           cursor: "pointer",
-          border: "3px solid black",
+          border: "0.2vw solid black",
           borderRadius: "5px",
-          boxShadow: "5px 5px black",
+          boxShadow: "0.4vw 0.4vw black",
           color: color,
           background: background,
-          WebkitTextStroke: "2px black",
-          textShadow: "4px 4px black",
+          WebkitTextStroke: "0.2vw black",
+          textShadow: "0.2vw 0.2vw black",
         }}
       >
         {text}
