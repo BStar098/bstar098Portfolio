@@ -16,6 +16,8 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
+  text-shadow: 0.3vw 0.3vw black !important;
+  -webkit-text-stroke: 0.1vw black !important;
 }
 
 .swiperContainer {
