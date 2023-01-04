@@ -30,7 +30,7 @@ header > a {
   transform: scale(1.4);
 }
 
-nav > a {
+nav > .navbarLink {
   text-decoration: none;
   font-size: 300%;
   letter-spacing: 3px;
@@ -41,7 +41,7 @@ nav > a {
   cursor: pointer;
 }
 
-nav > a:hover {
+nav > .navbarLink:hover {
   color: #ff0000;
   text-shadow: -8px -5px #fbfba5;
   font-size: 400%;
@@ -86,7 +86,7 @@ nav > a:hover {
   justify-content: flex-end;
 }
 
-.NavbarDesktop a {
+.NavbarDesktop .navbarLink {
   padding: 0% 1% 0% 1%;
   margin-right: 1%;
   border: 5px solid black;
@@ -167,10 +167,10 @@ nav > a:hover {
     border-right: 15px solid black;
     z-index: 5;
   }
-  .openNavbar > a {
+  .openNavbar > .navbarLink {
     font-size: 500%;
   }
-  .openNavbar > a:hover {
+  .openNavbar > .navbarLink:hover {
     font-size: 600%;
     letter-spacing: 50px;
   }
@@ -254,10 +254,10 @@ nav > a:hover {
     border-right: 15px solid black;
     z-index: 5;
   }
-  .openNavbar > a {
+  .openNavbar > .navbarLink {
     font-size: 300%;
   }
-  .openNavbar > a:hover {
+  .openNavbar > .navbarLink:hover {
     font-size: 330%;
     letter-spacing: 15px;
   }
