@@ -93,10 +93,9 @@ function MyProjects() {
                 width="100%"
                 height="90%"
                 src="https://www.youtube.com/embed/odtPaT5Qf0I"
-                title="YouTube video player"
-                frameborder="0"
+                title="RRHH DEMO"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <div className="swiperButtonsContainer">
                 <Button

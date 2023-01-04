@@ -1,18 +1,23 @@
-import { React, useState } from "react";
+import { React, useEffect, useState } from "react";
 import "../styles/Navbar/Navbar.css";
 import "../styles/main.css";
 import { Youtube } from "react-bootstrap-icons";
 
 function Navbar() {
   const [className, setClassName] = useState(" closeNavbar");
+  const [aboutMe, setAboutMe] = useState(" closeNavbar");
+  const [projects, setProjects] = useState(" closeNavbar");
   function classHandler() {
     document.getElementsByTagName("body")[0].classList.toggle("hideOverflowY");
     if (className === " openNavbar") setClassName(" closeNavbar");
     else setClassName(" openNavbar");
   }
-  const home = document.getElementById("home");
-  const aboutMe = document.getElementById("me");
-  const projects = document.getElementById("projects");
+
+  useEffect(() => {
+    setAboutMe(document.getElementById("me"))
+    setProjects(document.getElementById("projects"))
+    console.log('a')
+  }, []);
 
   return (
     <header>
@@ -26,47 +31,54 @@ function Navbar() {
         <Youtube className="youtubeIcon" size={60} />
       </a>
       <nav className={`NavbarDesktop`}>
-        <a
+        <p
+          href=""
           onClick={() => {
             aboutMe.scrollIntoView({ behavior: "smooth" });
           }}
+          className="navbarLink"
         >
           About me
-        </a>
-        <a
+        </p>
+        <p
           onClick={() => {
             projects.scrollIntoView({ behavior: "smooth" });
           }}
+          className="navbarLink"
         >
           My work
-        </a>
+        </p>
         <a
           href="https://mail.google.com/mail/?view=cm&source=mailto&to=santinahuel098@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
+          className="navbarLink"
         >
           Contact me
         </a>
       </nav>
       <nav onClick={classHandler} className={`Navbar${className}`}>
-        <a
+        <p
           onClick={() => {
             aboutMe.scrollIntoView({ behavior: "smooth" });
           }}
+          className="navbarLink"
         >
           About me
-        </a>
-        <a
+        </p>
+        <p
           onClick={() => {
             projects.scrollIntoView({ behavior: "smooth" });
           }}
+          className="navbarLink"
         >
           My work
-        </a>
+        </p>
         <a
           href="https://mail.google.com/mail/?view=cm&source=mailto&to=santinahuel098@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
+          className="navbarLink"
         >
           Contact me
         </a>
